@@ -15,6 +15,17 @@ ActiveRecord::Schema.define(version: 20170517225805) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "congress_members", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "state",      null: false
+    t.integer  "district"
+    t.string   "website"
+    t.string   "end",        null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "title"
+  end
+
   create_table "resources", force: :cascade do |t|
     t.string   "name"
     t.string   "link"
