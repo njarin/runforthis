@@ -2,7 +2,10 @@ class Search extends React.Component {
 
   render() {
     return (
-      <SearchForm />
+      <div className="search-page">
+        <NavBar />
+        <SearchForm />
+      </div>
     )
   }
 };

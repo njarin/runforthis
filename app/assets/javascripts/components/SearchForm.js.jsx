@@ -1,19 +1,19 @@
-class Search extends React.Component {
+class SearchForm extends React.Component {
 
   render() {
     return (
-      <form action="/results" method="get" class="container-content">
-        <div class="form-element container-content">
+      <form action="/results" method="get" className="container-content">
+        <div className="form-element container-content">
           <label>Street Address:</label>
-          <input class="input"  type="text" name="address[street]"></input>
+          <input className="input"  type="text" name="address[street]"></input>
         </div>
-        <div class="form-element container-content">
+        <div className="form-element container-content">
           <label>City:</label>
-          <input class="input"  type="text" name="address[city]"></input>
+          <input className="input"  type="text" name="address[city]"></input>
         </div>
-        <div class="form-element container-content">
+        <div className="form-element container-content">
           <label>State:</label>
-          <select class="input"  name="address[state]">
+          <select className="input"  name="address[state]">
             {/* <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -66,11 +66,11 @@ class Search extends React.Component {
             <option value="WY">Wyoming</option> */}
           </select>
         </div>
-        <div class="form-element container-content">
+        <div className="form-element container-content">
           <label>Zip Code:</label>
-          <input class="input" type="text" name="address[zipcode]"></input>
+          <input className="input" type="text" name="address[zipcode]"></input>
         </div>
-        <input class="container-content" id="submit" type="submit" value="Submit"></input>
+        <input className="container-content" id="submit" type="submit" value="Submit"></input>
       </form>
     )
   }
