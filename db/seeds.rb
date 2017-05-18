@@ -1,8 +1,17 @@
+StateLegislator.destroy_all
+StateDistrict.destroy_all
+Resource.destroy_all
+
+WA_STATE_REPS_LINK = 'http://leg.wa.gov/house/representatives/pages/default.aspx'
+
+49.times do |i|
+  StateDistrict.create(state: "WA", name: "State House District #{i + 1}")
+  StateDistrict.create(state: "WA", name: "State Senate District #{i + 1}")
+end
 
 
-wa_state_reps_page = 'http://leg.wa.gov/house/representatives/pages/default.aspx'
 
-wa_state_reps_noko = Nokogiri::HTML(open(wa_state_reps_page))
+wa_state_reps_noko = Nokogiri::HTML(open(WA_STATE_REPS_LINK))
 
 wa_state_reps_noko.css('.memberInformation').each do |member|
   state_legislator = StateLegislator.new
