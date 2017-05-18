@@ -2,8 +2,8 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <nav>
-        <a href="/" className="nav-bar">Run For This</a>
+      <nav className="top-nav-bar">
+        <a href="/" className="nav-bar-link home-link">Run For This</a>
       </nav>
     )
   }
