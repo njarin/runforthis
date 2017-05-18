@@ -4,6 +4,7 @@ class Search extends React.Component {
     return (
       <div className="search-page">
         <NavBar />
+        <Mission />
         <SearchForm />
       </div>
     )
