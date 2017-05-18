@@ -2,7 +2,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <form action="/results" method="post" class="container-content">
+      <form action="/results" method="get" class="container-content">
         <div class="form-element container-content">
           <label>Street Address:</label>
           <input class="input"  type="text" name="address[street]"></input>
@@ -14,7 +14,7 @@ class Search extends React.Component {
         <div class="form-element container-content">
           <label>State:</label>
           <select class="input"  name="address[state]">
-            <option value="AL">Alabama</option>
+            {/* <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
             <option value="AR">Arkansas</option>
@@ -59,11 +59,11 @@ class Search extends React.Component {
             <option value="TX">Texas</option>
             <option value="UT">Utah</option>
             <option value="VT">Vermont</option>
-            <option value="VA">Virginia</option>
+            <option value="VA">Virginia</option> */}
             <option value="WA">Washington</option>
-            <option value="WV">West Virginia</option>
+            {/* <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
-            <option value="WY">Wyoming</option>
+            <option value="WY">Wyoming</option> */}
           </select>
         </div>
         <div class="form-element container-content">
