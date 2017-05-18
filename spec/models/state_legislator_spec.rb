@@ -11,7 +11,7 @@ RSpec.describe StateLegislator, type: :model do
       expect(state_legislator.created_at).not_to be_nil
     end
 
-    it 'saves name correctly' do
+    it 'saves full name correctly' do
       state_legislator.state_district = state_district
       state_legislator.save
       expect(state_legislator.full_name).to eq "Dan McKeon"
