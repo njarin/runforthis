@@ -2,16 +2,17 @@ class SearchForm extends React.Component {
 
   render() {
     return (
-      <form action="/results" method="get" className="container-content">
-        <div className="form-element container-content">
+      <div className="container">
+      <form action="/results" method="get" className="">
+        <div className="form-element ">
           <label>Street Address:</label>
           <input className="input"  type="text" name="address[street]"></input>
         </div>
-        <div className="form-element container-content">
+        <div className="form-element ">
           <label>City:</label>
           <input className="input"  type="text" name="address[city]"></input>
         </div>
-        <div className="form-element container-content">
+        <div className="form-element ">
           <label>State:</label>
           <select className="input"  name="address[state]">
             {/* <option value="AL">Alabama</option>
@@ -66,12 +67,13 @@ class SearchForm extends React.Component {
             <option value="WY">Wyoming</option> */}
           </select>
         </div>
-        <div className="form-element container-content">
+        <div className="form-element ">
           <label>Zip Code:</label>
           <input className="input" type="text" name="address[zipcode]"></input>
         </div>
-        <input className="container-content" id="submit" type="submit" value="Submit"></input>
+        <input className="" id="submit" type="submit" value="Submit"></input>
       </form>
+      </div>
     )
   }
 };
