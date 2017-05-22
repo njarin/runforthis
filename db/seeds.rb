@@ -6,13 +6,13 @@ StateDistrict.destroy_all
 Resource.destroy_all
 
 def create_state_legislators(wa_leg_noko)
+  wa_senate_term_ends = find_senate_terms
   wa_leg_noko.css('.memberInformation').each do |member|
     state_legislator = StateLegislator.new
     member_name_raw_arr = member.at('.memberName').text.split(' ')
     state_legislator.full_name = member_name_raw_arr[1..-2].join(' ')
     state_legislator.party = member_name_raw_arr[-1].gsub(/[()]/, '')
     state_legislator.website = member.at_css('a:contains("Home Page")')["href"]
-    # NEED TO FIX SENATOR TERMS!
     district_name_raw = member.at_css('a:contains("Legislative District")').text
     district_num = district_name_raw[/\d+/]
     if member_name_raw_arr[0] == 'Representative'
@@ -21,7 +21,7 @@ def create_state_legislators(wa_leg_noko)
       district_name = "State House District #{district_num}"
     else
       state_legislator.title =  'Sen.'
-      state_legislator.term_end = "November 2018" #FIX THIS!!!
+      state_legislator.term_end = wa_senate_term_ends[district_num]
       district_name = "State Senate District #{district_num}"
     end
     state_legislator.state_district = StateDistrict.find_by(name: district_name)
