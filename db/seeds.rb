@@ -1,6 +1,3 @@
-
-
-
 StateLegislator.destroy_all
 StateDistrict.destroy_all
 Resource.destroy_all
