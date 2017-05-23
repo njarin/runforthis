@@ -70,3 +70,15 @@ wa_state_sens_noko = Nokogiri::HTML(open(wa_state_sens_link))
 
 create_state_legislators(wa_state_reps_noko)
 create_state_legislators(wa_state_sens_noko)
+
+# Correct for WA State House Special Elections
+wa_state_rep_corrections = {
+  "Jacquelin Maycumber" => "November 2017",
+  "Morgan Irwin" => "November 2017",
+  "Vandana Slatter" => "November 2017"
+}
+
+wa_state_rep_corrections.each do |name, term_end|
+  state_rep = StateLegislator.find_by(full_name: name)
+  state_rep.update_attribute(:term_end, term_end)
+end
