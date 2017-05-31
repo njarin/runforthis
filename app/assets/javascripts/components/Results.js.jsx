@@ -6,6 +6,7 @@ class Results extends React.Component {
         <NavBar />
         <div>
           Here are your results:
+          <Office />
         </div>
       </div>
     )
