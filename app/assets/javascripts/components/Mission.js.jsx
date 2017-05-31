@@ -1,4 +1,9 @@
 class Mission extends React.Component {
+  onClick(e) {
+    e.preventDefault();
+    console.log("We Made it!")
+    this.props.onClick(e)
+  }
 
   render() {
     return (
@@ -13,7 +18,7 @@ class Mission extends React.Component {
             "If not us, who? If not now, when?"
           </p>
         </div>
-        <button>Learn More</button>
+        <button onClick={(e) => this.onClick(e)}>Learn More</button>
       </div>
     )
   }
