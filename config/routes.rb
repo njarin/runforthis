@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
   root 'search#search'
+  get '/results', to: 'results#results'
 end
