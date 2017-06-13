@@ -1,14 +1,15 @@
 class Results extends React.Component {
 
   render() {
+    console.log(this.props.offices)
     return (
       <div className="results-page">
         <NavBar />
         <div>
           Here are your results:
-          <Office office={this.props.offices.rep1} />
-          <Office office={this.props.offices.rep2} />
-          <Office office={this.props.offices.sen} />
+          {this.props.offices.map((office, index) => {
+            return(<Office office={office} key={index}/>)
+          })}
         </div>
       </div>
     )
