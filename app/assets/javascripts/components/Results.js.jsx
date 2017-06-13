@@ -6,7 +6,9 @@ class Results extends React.Component {
         <NavBar />
         <div>
           Here are your results:
-          <Office />
+          <Office office={this.props.offices.rep1} />
+          <Office office={this.props.offices.rep2} />
+          <Office office={this.props.offices.sen} />
         </div>
       </div>
     )
