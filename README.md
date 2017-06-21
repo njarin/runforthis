@@ -1,24 +1,24 @@
-# README
+# Run For This
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The Team
 
-Things you may want to cover:
+* [Nick Jarin](https://github.com/njarin)
+* [Dan McKeon](https://github.com/danmckeon)
 
-* Ruby version
+## Description
 
-* System dependencies
+Local elected officials have a significant impact on our day-to-day lives. About 33% of state-level legislators run unopposed. That’s a problem if you believe in democracy. With Run For This, you can enter an address and see what local offices are opening up nearby and how to run for those seats.
 
-* Configuration
+## How to Install Locally
 
-* Database creation
+* Run the following commands in console to set up environment and database:
+`bundle install`
+`bundle exec rake db:create`
+`bundle exec rake db:migrate`
+`bundle exec rake db:seed`
+* Run `rails s` in console to start server
 
-* Database initialization
+## How to Use the App
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Enter your address on the home page and click "Submit" to see local elected offices for which you can run
+* Run For This will be deployed soon
