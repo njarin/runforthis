@@ -51,12 +51,13 @@ end
 
 dem_resource = Resource.create(name: "Washington State Democratic Party", link: "http://www.wa-democrats.org/")
 rep_resource = Resource.create(name: "Washington State Republican Party", link: "https://wsrp.org/")
+how_to_run_resource = Resource.create(name: "How to Run", link: "https://www.sos.wa.gov/_assets/elections/candidates/State%20Candidates%20Guide%202017.pdf")
 
 49.times do |i|
   state_house_district = StateDistrict.create(state: "WA", name: "State House District #{i + 1}")
-  state_house_district.resources << dem_resource << rep_resource
+  state_house_district.resources << dem_resource << rep_resource << how_to_run_resource
   state_senate_district = StateDistrict.create(state: "WA", name: "State Senate District #{i + 1}")
-  state_senate_district.resources << dem_resource << rep_resource
+  state_senate_district.resources << dem_resource << rep_resource << how_to_run_resource
 end
 
 wa_state_reps_link = 'http://leg.wa.gov/house/representatives/pages/default.aspx'
