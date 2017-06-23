@@ -12,7 +12,7 @@ class Office extends React.Component {
         <p>
           Incumbent: <a href={legislator.website} target="_blank">{legislator.title} {legislator.full_name}</a>
         </p>
-        <p>Here's some organizations that may be able to help you run:</p>
+        <p>Here's some resources that may be able to help you run:</p>
         <ul>
           {organizations.map((org) => {
                                       return(
