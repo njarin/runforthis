@@ -49,7 +49,7 @@ def find_senate_terms
   wa_senate_term_ends
 end
 
-how_to_run_resource = Resource.create(name: "How to Run for this Office", link: "https://www.sos.wa.gov/_assets/elections/candidates/State%20Candidates%20Guide%202017.pdf")
+how_to_run_resource = Resource.create(name: "How to File to Run for this Office", link: "https://www.sos.wa.gov/_assets/elections/candidates/State%20Candidates%20Guide%202017.pdf")
 dem_resource = Resource.create(name: "Washington State Democratic Party", link: "http://www.wa-democrats.org/")
 rep_resource = Resource.create(name: "Washington State Republican Party", link: "https://wsrp.org/")
 
