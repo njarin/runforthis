@@ -3,7 +3,5 @@ class SearchController < ApplicationController
     render 'search/search'
   end
   def about
-    "Yoooooooooooooooooooo"
-    # render 'views/about'
   end
 end
