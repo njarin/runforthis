@@ -32,3 +32,19 @@ body {
   width: 700px;
   margin: auto;
 }
+
+.about-page {
+  .about-us-section {
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    .column {
+      width: 320px;
+      padding: 15px;
+    }
+    .about-dan {
+      float: right;
+    }
+  }
+}
