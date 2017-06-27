@@ -39,12 +39,23 @@ body {
     margin: auto;
     font-size: 20px;
     line-height: 1.5;
+    background-color: #E8F4FA;
+    .about-nick {
+      vertical-align: top;
+    }
     .column {
       width: 320px;
-      padding: 15px;
+      padding: 40px;
+      display: inline-block;
+      min-height: 260px;
+      margin-left: auto;
+      img {
+        padding: 0px 15px 0px 15px;
+        width: 10%;
+      }
     }
-    .about-dan {
-      float: right;
+    h2 {
+      margin-left: 40%;
     }
   }
 }
