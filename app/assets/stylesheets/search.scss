@@ -65,3 +65,21 @@ body {
     }
   }
 }
+
+.footer {
+  p {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 2em;
+  min-height: 55px;
+  background-color: #004C79;
+}
