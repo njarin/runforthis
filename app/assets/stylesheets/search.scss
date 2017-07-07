@@ -40,12 +40,17 @@ body {
     font-size: 20px;
     line-height: 1.5;
     background-color: #E8F4FA;
+    margin-top: 5em;
+    border: 3px solid black;
+    border-radius: 10px;
     .about-nick {
       vertical-align: top;
+      border-right: 1px solid black;
     }
     .column {
-      width: 320px;
-      padding: 40px;
+      width: 319.5px;
+      padding: 0px 40px 0px 40px;
+      margin-bottom: 40px;
       display: inline-block;
       min-height: 260px;
       margin-left: auto;
@@ -56,7 +61,6 @@ body {
     }
     h2 {
       margin-left: 40%;
-      padding-top: 34px;
       font-size: 40px;
     }
   }
