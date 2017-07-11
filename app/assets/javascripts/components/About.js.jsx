@@ -3,7 +3,6 @@ class About extends React.Component {
   render() {
     return (
       <div className="about-page">
-        <NavBar />
         <div className="about-us-section">
           <h2>
             The Team

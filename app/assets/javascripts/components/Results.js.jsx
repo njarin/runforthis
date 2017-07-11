@@ -4,7 +4,6 @@ class Results extends React.Component {
     console.log(this.props.offices)
     return (
       <div className="results-page">
-        <NavBar />
         <div>
           Here are your results:
           {this.props.offices.map((office, index) => {
