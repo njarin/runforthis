@@ -6,6 +6,7 @@ class Search extends React.Component {
         <NavBar />
         <Mission />
         <SearchForm />
+        <Footer />
       </div>
     )
   }

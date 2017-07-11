@@ -10,19 +10,14 @@ class Office extends React.Component {
           {district}
         </h2>
         <p>
+          Next Election: {legislator.term_end}
+        </p>
+        <p>
           Incumbent: <a href={legislator.website} target="_blank">{legislator.title} {legislator.full_name}</a>
         </p>
         <p>Here's some resources that may be able to help you run:</p>
         <ul>
-          {organizations.map((org) => {
-                                      return(
-                                            <li key={org.id}>
-                                              <a href={org.link} target="_blank">
-                                                {org.name}
-                                              </a>
-                                            </li>)
-                                        })
-            }
+          {organizations.map((org) => { return(<Resource organization = {org} /> )})}
         </ul>
       </div>
     )
