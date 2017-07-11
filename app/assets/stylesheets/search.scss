@@ -8,6 +8,9 @@ body {
   // min-height: 1000px;
   font-family: 'Lato', sans-serif;
   margin: 0;
+  background: url(US_Flag_cropped.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
 }
 
 .top-nav-bar {
@@ -84,4 +87,31 @@ body {
   margin-top: 2em;
   min-height: 55px;
   background-color: #004C79;
+}
+
+.mission-component {
+  background-color: rgba(232, 244, 250, 0.85);
+}
+
+.mission-statement {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+.mission-quote {
+  background-color: #004C79;
+  padding: 30px;
+}
+
+.quote {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  color: white;
 }
