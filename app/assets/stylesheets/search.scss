@@ -90,14 +90,15 @@ body {
 }
 
 .mission-component {
-  background-color: rgba(232, 244, 250, 0.85);
 }
 
 .mission-statement {
+  border-radius: 5px;
+  background-color: rgba(232, 244, 250, 0.9);
+  margin: 32px auto 32px auto;
+  border: 3px solid black;
   text-align: center;
   font-size: 22px;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 30px;
 }
 
@@ -114,4 +115,55 @@ body {
   text-align: center;
   margin: 0;
   color: white;
+}
+
+// SearchForm
+.search-form-container {
+  background-color: rgba(232, 244, 250, 0.9);
+  border-radius: 5px;
+  margin: 32px auto 32px auto;
+  border: 3px solid black;
+  h2 {
+    padding: 15px 20% 0 20%;
+    text-align: center;
+  }
+}
+
+.form {
+  display: none;
+  background-color: #2c3e50;
+}
+
+.form-element {
+  padding: 8px;
+  margin: auto;
+  max-width: 400px;
+  select {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px 5px 5px 0;
+}
+
+#submit {
+  padding: 15px;
+  margin: 15px auto 15px 37%;
+  background-color: #004C79;
+  font-size: 20px;
+  // font-weight: bold;
+  border-style: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  // width: 20%;
+}
+
+label {
+  font-size: 20px;
+  // font-weight: bold;
 }

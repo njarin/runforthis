@@ -2,7 +2,10 @@ class SearchForm extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container search-form-container">
+        <h2>
+          Enter your address to find local political offices. You can run for these!
+        </h2>
       <form action="/results" method="get" className="">
         <div className="form-element ">
           <label>Street Address:</label>
@@ -71,7 +74,7 @@ class SearchForm extends React.Component {
           <label>Zip Code:</label>
           <input className="input" type="text" name="address[zipcode]"></input>
         </div>
-        <input className="" id="submit" type="submit" value="Submit"></input>
+        <input className="" id="submit" type="submit" value="Find Local Offices"></input>
       </form>
       </div>
     )
