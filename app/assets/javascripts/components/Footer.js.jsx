@@ -15,6 +15,9 @@ class Footer extends React.Component {
           href="http://creativecommons.org/licenses/by/3.0/"
           title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
         </p>
+        <p>
+          Background image by Jnn13 [<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> or <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a href="https://commons.wikimedia.org/wiki/File%3AUS_Flag_Backlit.jpg">via Wikimedia Commons</a>
+        </p>
       </div>
     )
   }
